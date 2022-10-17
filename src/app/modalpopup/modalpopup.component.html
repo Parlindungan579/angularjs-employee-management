@@ -1,0 +1,49 @@
+<h1 mat-dialog-title>Employee</h1>
+<form [formGroup]="Reactiveform" (ngSubmit)="SaveEmployee()">
+  <div mat-dialog-content>
+    <mat-form-field>
+      <mat-label>ID</mat-label>
+      <input placeholder="ID" matInput formControlName="id">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input placeholder="Username" matInput formControlName="username">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Firstname</mat-label>
+      <input placeholder="Firstname" matInput formControlName="firstname">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Lastname</mat-label>
+      <input placeholder="Lastname" matInput formControlName="lastname">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input placeholder="Email" matInput formControlName="email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Birthdate</mat-label>
+      <input placeholder="Birthdate" matInput formControlName="birthdate">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Basicsalary</mat-label>
+      <input placeholder="Basicsalary" matInput formControlName="basicsalary">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Status</mat-label>
+      <input placeholder="Status" matInput formControlName="status">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Group</mat-label>
+      <input placeholder="Group" matInput formControlName="group">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <input placeholder="Description" matInput formControlName="description">
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button type="submit" mat-raised-button color="primary" cdkFocusInitial>Save</button>
+  </div>
+</form>
